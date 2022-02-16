@@ -1,0 +1,13 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+
+  config:
+    N8N_BASIC_AUTH_ACTIVE: true
+    N8N_BASIC_AUTH_USER: bhanu
+    N8N_BASIC_AUTH_PASSWORD: password
+
+build:
+  docker:
+    web: Dockerfile

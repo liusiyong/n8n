@@ -15,11 +15,16 @@
     "start:default": "cd packages/cli/bin && ./n8n",
     "start:windows": "cd packages/cli/bin && n8n",
     "test": "lerna run test",
+    "tsc": "tsc",
     "watch": "lerna run --parallel watch",
     "webhook": "./packages/cli/bin/n8n webhook",
     "worker": "./packages/cli/bin/n8n worker"
   },
+  "engines": {
+    "node": "17.4.0"
+  },
   "devDependencies": {
+    "typescript": "^4.5.5",
     "lerna": "^3.13.1",
     "rimraf": "^3.0.2",
     "run-script-os": "^1.0.7"
